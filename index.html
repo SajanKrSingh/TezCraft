@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TezCraft</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dbde72f364.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="font-sans bg-gray-50 text-gray-800">
@@ -85,20 +86,161 @@
 
 
 
-    <!-- Services Section -->
-    <section id="services" class="py-16 px-6">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-10">Our Services</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="bg-white shadow p-6 rounded">Website Development</div>
-                <div class="bg-white shadow p-6 rounded">App Development</div>
-                <div class="bg-white shadow p-6 rounded">UI/UX & Graphic Design</div>
-                <div class="bg-white shadow p-6 rounded">Video Editing</div>
-                <div class="bg-white shadow p-6 rounded">Digital Marketing</div>
-                <div class="bg-white shadow p-6 rounded">DevOps & Maintenance</div>
+
+
+    <!--Services Section-->
+    <section id="services" class="py-16 px-4 bg-white">
+        <div class="max-w-6xl  mx-auto text-center space-y-8">
+
+            <!-- Button -->
+            <div class="flex">
+                <div>
+                    <!-- <a href="#contact"
+                        class="inline-block bg-[#ff5c1a] text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-orange-700 transition">
+                        Explore Our Services
+                    </a> -->
+                    <h2
+                        class="bg-[#ff5c1a] text-white font-semibold px-6 py-3 shadow-md hover:bg-orange-700 transition">
+                        Explore Our Services</h2>
+                </div>
+
+                <!-- Paragraph Description -->
+                <p class="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto md:text-xl">
+                    Empowering your business with fast, all-in-one digital <br> services - websites, apps, branding, and
+                    growth marketing.
+                </p>
             </div>
+
+            <!-- Service Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                <div
+                    class="bg-orange-100 border  p-6 rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 border-gray-600 shadow-gray-500">
+                    <div
+                        class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-6 mt-4 mb-4">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl font-semibold mb-2">Website Development</h3>
+                            <button class="btn  pt-6">
+                                <i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i>
+                                Learn More
+                            </button>
+                        </div>
+                        <div>
+                            <img src="./Assets/website.png" height="50%" width="50%" alt=""
+                                class="object-contain mx-auto md:mx-auto ">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div
+                    class="bg-blue-200 border  p-6 rounded-3xl shadow-xl hover:shadow-gray-600  transition duration-200 border-gray-600 shadow-gray-500">
+                    <div
+                        class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-6 mt-4 mb-4">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl font-semibold mb-2">APP Development</h3>
+                            <button class="btn  pt-6">
+                                <i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i>
+                                Learn More
+                            </button>
+                        </div>
+                        <div>
+                            <img src="./Assets/website.png" height="50%" width="50%" alt=""
+                                class="object-contain mx-auto md:mx-auto ">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gray-400 border  p-6 rounded-3xl shadow-xl hover:shadow-gray-600  transition duration-200 border-gray-600 shadow-gray-500">
+                    <div class="flex flex-col md:flex-row items-center justify-between space-y-4  mt-4 mb-4">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl md:text-xl font-semibold whitespace-nowrap mb-2"> Design
+                                <br>(UI/UX +Graphic)
+                            </h3>
+                            <button class="pt-6 text-left">
+                                <i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i>
+                                Learn More
+                            </button>
+                        </div>
+                        <div>
+                            <img src="./Assets/website.png" height="50%" width="50%" alt=""
+                                class="object-contain mx-auto md:mx-auto ">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- <div class="bg-gray-50 border p-6 rounded shadow-sm hover:shadow-md transition">Video Editing</div> -->
+                <div
+                    class="bg-orange-100 border  p-6 rounded-3xl shadow-xl hover:shadow-gray-600  transition duration-200 border-gray-600 shadow-gray-500">
+                    <div class="flex flex-col md:flex-row items-center justify-between space-y-4  mt-4 mb-4">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl md:text-xl font-semibold whitespace-nowrap mb-2"> Video
+                                Editing
+                            </h3>
+                            <button class="pt-6 text-left">
+                                <i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i>
+                                Learn More
+                            </button>
+                        </div>
+                        <div>
+                            <img src="./Assets/website.png" height="50%" width="50%" alt=""
+                                class="object-contain mx-auto md:mx-auto ">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- <div class="bg-gray-50 border p-6 rounded shadow-sm hover:shadow-md transition">Digital Marketing</div> -->
+                <div
+                    class="bg-blue-200 border  p-6 rounded-3xl shadow-xl hover:shadow-gray-600  transition duration-200 border-gray-600 shadow-gray-500">
+                    <div class="flex flex-col md:flex-row items-center justify-between space-y-4  mt-4 mb-4">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl md:text-xl font-semibold whitespace-nowrap mb-2"> Digital
+                                Marketing
+                            </h3>
+                            <button class="pt-6 text-left">
+                                <i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i>
+                                Learn More
+                            </button>
+                        </div>
+                        <div>
+                            <img src="./Assets/website.png" height="50%" width="50%" alt=""
+                                class="object-contain mx-auto md:mx-auto ">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- <div class="bg-gray-50 border p-6 rounded shadow-sm hover:shadow-md transition">DevOps & Maintenance
+                </div> -->
+                <div
+                    class="bg-gray-400 border  p-6 rounded-3xl shadow-xl hover:shadow-gray-600  transition duration-200 border-gray-600 shadow-gray-500">
+                    <div class="flex flex-col md:flex-row items-center justify-between space-y-4  mt-4 mb-4">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl md:text-xl font-semibold whitespace-nowrap mb-2"> DevOps & Maintenance
+                            </h3>
+                            <button class="pt-6 text-left">
+                                <i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i>
+                                Learn More
+                            </button>
+                        </div>
+                        <div>
+                            <img src="./Assets/website.png" height="50%" width="50%" alt=""
+                                class="object-contain mx-auto md:mx-auto ">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
+
+
 
     <!-- Process Section -->
     <section id="process" class="bg-gray-100 py-16 px-6">
