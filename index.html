@@ -289,6 +289,7 @@
             Discover how we’ve helped businesses achieve digital <br> growth with our complete solutions.
         </p>
     </div>
+
     <section class="bg-gray-100 flex items-center justify-center mt-6">
 
 
@@ -337,23 +338,120 @@
 
 
 
-    <!-- Process Section -->
-    <section id="process" class="bg-gray-100 py-16 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-10">Our Working Process</h2>
-            <ol class="space-y-4 text-left">
-                <li><strong>01.</strong> Consultation</li>
-                <li><strong>02.</strong> Strategy & Planning</li>
-                <li><strong>03.</strong> Execution</li>
-                <li><strong>04.</strong> Monitoring & Optimization</li>
-                <li><strong>05.</strong> Reporting</li>
-                <li><strong>06.</strong> Continuous Improvement</li>
-            </ol>
+    <div class="flex md:flex-row flex-col items-center justify-center space-x-2 py-10 mt-4  ">
+        <div>
+            <h2
+                class=" bg-[#ff5c1a] text-white text-3xl font-semibold px-6 py-3 shadow-md hover:bg-orange-700 transition">
+                Our Working Process</h2>
+        </div>
+
+        <!-- Paragraph Description -->
+        <p class="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto md:text-xl">
+            Step-by-Step Guide to Achieving
+            Your Business Goals
+        </p>
+    </div>
+    <section class="min-h-screen flex items-center justify-center">
+        <div class="w-full max-w-6xl space-y-4 px-4">
+
+            <!-- Accordion Item 1 (Open) -->
+            <div
+                class="border border-black  rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 shadow-gray-500 p-6  text-black">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleAccordion(1)">
+                    <div class="flex items-center gap-4 font-semibold">
+                        <span class="text-2xl font-bold">01</span>
+                        <span>Consultation</span>
+                    </div>
+                    <span id="icon-1" class="text-xl">−</span>
+                </div>
+                <div id="content-1" class="mt-4 text-sm border-t border-black pt-2">
+                    During the initial consultation, we will discuss your business goals and objectives, target
+                    audience, and current marketing efforts. This will allow us to understand your needs and tailor our
+                    services to best fit your requirements.
+                </div>
+            </div>
+
+            <!-- Accordion Items 2 to 6 -->
+            <div
+                class="accordion-item border border-black rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 shadow-gray-500 p-6  text-black">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleAccordion(2)">
+                    <div class="flex items-center gap-4 font-semibold">
+                        <span class="text-2xl font-bold">02</span>
+                        <span>Research and Strategy Development</span>
+                    </div>
+                    <span id="icon-2" class="text-xl">+</span>
+                </div>
+                <div id="content-2" class="mt-4 text-sm hidden border-t border-black pt-2">
+                    We analyze your market and develop a custom strategy tailored to your goals and target audience.
+                </div>
+            </div>
+
+            <div
+                class="accordion-item border border-black rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 shadow-gray-500 p-6  text-black">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleAccordion(3)">
+                    <div class="flex items-center gap-4 font-semibold">
+                        <span class="text-2xl font-bold">03</span>
+                        <span>Implementation</span>
+                    </div>
+                    <span id="icon-3" class="text-xl">+</span>
+                </div>
+                <div id="content-3" class="mt-4 text-sm hidden border-t border-black pt-2">
+                    We execute the strategy with best practices across channels and tools.
+                </div>
+            </div>
+
+            <div
+                class="accordion-item border border-black rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 shadow-gray-500 p-6  text-black">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleAccordion(4)">
+                    <div class="flex items-center gap-4 font-semibold">
+                        <span class="text-2xl font-bold">04</span>
+                        <span>Monitoring and Optimization</span>
+                    </div>
+                    <span id="icon-4" class="text-xl">+</span>
+                </div>
+                <div id="content-4" class="mt-4 text-sm hidden border-t border-black pt-2">
+                    Performance is continuously monitored, and adjustments are made to maximize ROI.
+                </div>
+            </div>
+
+            <div
+                class="accordion-item border border-black rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 shadow-gray-500 p-6  text-black">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleAccordion(5)">
+                    <div class="flex items-center gap-4 font-semibold">
+                        <span class="text-2xl font-bold">05</span>
+                        <span>Reporting and Communication</span>
+                    </div>
+                    <span id="icon-5" class="text-xl">+</span>
+                </div>
+                <div id="content-5" class="mt-4 text-sm hidden border-t border-black pt-2">
+                    Transparent reporting and ongoing communication ensure you’re always informed.
+                </div>
+            </div>
+
+            <div
+                class="accordion-item border border-black rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 shadow-gray-500 p-6  text-black">
+                <div class="flex justify-between items-center cursor-pointer" onclick="toggleAccordion(6)">
+                    <div class="flex items-center gap-4 font-semibold">
+                        <span class="text-2xl font-bold">06</span>
+                        <span>Continual Improvement</span>
+                    </div>
+                    <span id="icon-6" class="text-xl">+</span>
+                </div>
+                <div id="content-6" class="mt-4 text-sm hidden border-t border-black pt-2">
+                    We refine strategies over time to adapt to market changes and drive consistent growth.
+                </div>
+            </div>
         </div>
     </section>
 
+
+
+
+
+
+
     <!-- Team Section -->
-    <section id="team" class="py-16 px-6">
+    <section id="team" class="py-16 px-6 ">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Meet Our Team</h2>
             <p class="text-lg">Skilled professionals across development, design, marketing, and video production.</p>
@@ -405,6 +503,41 @@
             e.preventDefault();
             alert("Thanks! We'll be in touch soon.");
         });
+
+
+        <!-- JS for toggling -->
+        function toggleAccordion(index) {
+            for (let i = 1; i <= 6; i++) {
+                const content = document.getElementById(`content-${i}`);
+                const icon = document.getElementById(`icon-${i}`);
+                const item = content.closest(".accordion-item") || content.parentElement;
+
+                if (i === index) {
+                    const isHidden = content.classList.contains("hidden");
+
+                    // Toggle content visibility and icon
+                    content.classList.toggle("hidden");
+                    icon.textContent = isHidden ? "−" : "+";
+
+                    // Toggle background color
+                    if (isHidden) {
+                        item.classList.add("bg-orange-200");
+                    } else {
+                        item.classList.remove("bg-orange-200");
+                    }
+                } else {
+                    // Hide other accordions
+                    document.getElementById(`content-${i}`).classList.add("hidden");
+                    document.getElementById(`icon-${i}`).textContent = "+";
+
+                    const otherItem = document.getElementById(`content-${i}`).closest(".accordion-item") || document.getElementById(`content-${i}`).parentElement;
+                    otherItem.classList.remove("bg-orange-200");
+                }
+            }
+        }
+
+
+
     </script>
 </body>
 
