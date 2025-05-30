@@ -11,19 +11,39 @@
 
 <body class="bg-white text-black">
 
-    <nav
-        class="d-flex flex-column flex-md-row justify-content-between align-items-center py-4 px-3 px-md-5 border-bottom">
-        <div class="fw-bold fs-4 mb-3 mb-md-0">Tezcraft</div>
-        <ul class="d-flex flex-wrap justify-content-center gap-3 list-unstyled mb-0 align-items-center">
-            <li><a href="#" class="text-dark text-decoration-none">About us</a></li>
-            <li><a href="#" class="text-dark text-decoration-none">Services</a></li>
-            <li><a href="#" class="text-dark text-decoration-none fw-bold bg-lime-300 px-3 py-1 rounded">Use Cases</a>
-            </li>
-            <li><a href="#" class="text-dark text-decoration-none">Pricing</a></li>
-            <li><a href="#" class="text-dark text-decoration-none">Blog</a></li>
-            <li><button class="border border-dark rounded px-3 py-1 bg-white">Request a quote</button></li>
-        </ul>
-    </nav>
+    <header class="bg-white shadow text-base md:text-lg">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <img src="../logo1.png" alt="TezCraft Logo" class="h-10 md:h-14 w-auto" />
+
+            <!-- Hamburger (Mobile) -->
+            <button id="menuBtn" class="md:hidden text-3xl text-gray-700 focus:outline-none">
+                &#9776;
+            </button>
+
+            <!-- Nav Links (Desktop) -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="../About/About.html" class="text-gray-700 hover:text-blue-600">About</a>
+                <a href="../Services/index.html" class="text-gray-700 hover:text-blue-600">Services</a>
+                <a href="../UseCases/index.html" class="text-gray-700 hover:text-blue-600">Use Case</a>
+                <a href="../pricing/pricing.html" class="text-gray-700 hover:text-blue-600">Price</a>
+                <button class="border border-black hover:bg-black hover:text-white rounded px-3 py-1 bg-white">Request a
+                    quote</button>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden px-6 pb-4">
+            <a href="../About/About.html" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+            <a href="../Services/index.html" class="block py-2 text-gray-700 hover:text-blue-600">Services</a>
+            <a href="../UseCases/index.html" class="block py-2 text-gray-700 hover:text-blue-600">Use Case</a>
+            <a href="../pricing/pricing.html" class="block py-2 text-gray-700 hover:text-blue-600">Price</a>
+            <button
+                class="w-full border border-black hover:bg-black hover:text-white rounded px-3 py-2 bg-white">Request a
+                quote</button>
+        </div>
+    </header>
+
 
     <section class="container mt-5 mb-5">
         <div class="bg-gray-100 rounded-3 p-4 p-md-5 d-flex flex-column flex-lg-row align-items-center gap-4 gap-lg-5">

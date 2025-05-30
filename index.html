@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/dbde72f364.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="./index.js"></script>
 
 </head>
 
@@ -26,11 +27,11 @@
             <!-- Nav Links (Desktop) -->
             <nav class="hidden md:flex space-x-6">
                 <a href="./About/About.html" class="text-gray-700 hover:text-blue-600">About</a>
-                <a href="./AboutUS/about.html" class="text-gray-700 hover:text-blue-600">About Us</a>
                 <a href="./Services/index.html" class="text-gray-700 hover:text-blue-600">Services</a>
                 <a href="./UseCases/index.html" class="text-gray-700 hover:text-blue-600">Use Cases</a>
                 <a href="./pricing/pricing.html" class="text-gray-700 hover:text-blue-600">Pricing</a>
-                <button class="border border-dark rounded px-3 py-1 bg-white">Request a quote</button>
+                <button class="border border-black hover:bg-black hover:text-white rounded px-3 py-1 bg-white">Request a
+                    quote</button>
             </nav>
         </div>
 
@@ -753,87 +754,6 @@
         </div>
     </footer>
 
-
-
-
-
-
-    <!-- JavaScript for form interaction -->
-    <script>
-        // ✅ JS to Toggle Mobile Menu
-
-        const menuBtn = document.getElementById('menuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-
-        // JavaScript to handle form submission
-        document.querySelector("form").addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert("Thanks! We'll be in touch soon.");
-        });
-
-
-        <!-- JS for toggling -->
-        function toggleAccordion(index) {
-            for (let i = 1; i <= 6; i++) {
-                const content = document.getElementById(`content-${i}`);
-                const icon = document.getElementById(`icon-${i}`);
-                const item = content.closest(".accordion-item") || content.parentElement;
-
-                if (i === index) {
-                    const isHidden = content.classList.contains("hidden");
-
-                    // Toggle content visibility and icon
-                    content.classList.toggle("hidden");
-                    icon.textContent = isHidden ? "−" : "+";
-
-                    // Toggle background color
-                    if (isHidden) {
-                        item.classList.add("bg-orange-200");
-                    } else {
-                        item.classList.remove("bg-orange-200");
-                    }
-                } else {
-                    // Hide other accordions
-                    document.getElementById(`content-${i}`).classList.add("hidden");
-                    document.getElementById(`icon-${i}`).textContent = "+";
-
-                    const otherItem = document.getElementById(`content-${i}`).closest(".accordion-item") || document.getElementById(`content-${i}`).parentElement;
-                    otherItem.classList.remove("bg-orange-200");
-                }
-            }
-        }
-
-
-
-
-        // JavaScript for the slider functionality
-        let currentIndex = 0;
-        const slider = document.getElementById('slider');
-        const slides = slider.children;
-
-        function updateSlider() {
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        function nextSlide() {
-            if (currentIndex < slides.length - 1) {
-                currentIndex++;
-                updateSlider();
-            }
-        }
-
-        function prevSlide() {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateSlider();
-            }
-        }
-
-    </script>
 </body>
 
 </html>
