@@ -1,10 +1,3 @@
-// ✅ JS to Toggle Mobile Menu
-
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-});
 
 // JavaScript to handle form submission
 document.querySelector("form").addEventListener("submit", function (e) {
