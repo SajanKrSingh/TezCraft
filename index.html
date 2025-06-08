@@ -50,7 +50,7 @@
 
     <section class=" w-full pt-50">
         <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between">
-         
+
             <div class="md:w-1/2  mt-8 text-center md:text-left space-y-6 mb-10 md:mb-0">
                 <h1 class="text-3xl sm:text-4xl sm:mt-6 md:text-5xl font-bold leading-tight">
                     <span class="block">Navigating the</span>
@@ -93,7 +93,7 @@
                         class="bg-[#ff5c1a] text-white font-semibold px-6 py-3 shadow-md hover:bg-orange-700 transition">
                         Explore Our Services</h2>
                 </div>
-\
+                \
                 <p class="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto md:text-xl">
                     Empowering your business with fast, all-in-one digital <br> services - websites, apps, branding, and
                     growth marketing.
@@ -230,7 +230,7 @@
     <section class="py-16 px-4">
         <div class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto space-y-8 md:space-y-0">
             <div class="max-w-4xl mx-auto text-center">
-            
+
                 <h2 class="text-3xl sm:text-4xl font-bold">
                     Let’s make things happen
                 </h2>
@@ -323,7 +323,7 @@
             Your Business Goals
         </p>
     </div>
-    
+
     <section class="min-h-screen flex items-center justify-center">
         <div class="w-full max-w-6xl space-y-4 px-4">
 
@@ -599,38 +599,52 @@
                 </label>
             </div>
 
-            <!-- Form Fields -->
-            <form class="space-y-4">
+            <!-- Form (Formsubmit.co) -->
+            <form action="https://formsubmit.co/kumarsajan0013@gmail.com" method="POST" class="space-y-4">
+                <!-- Hidden Settings -->
+                <input type="hidden" name="_next" value="./thankYou/thankyou.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_autoresponse"
+                    value="Thanks for contacting TezCraft! We’ll reach out to you shortly.">
+                <!-- (Optional) Redirect to a thank-you page -->
+                <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
+
+                <!-- Name -->
                 <div>
                     <label class="block text-sm mb-1">Name</label>
-                    <input type="text" placeholder="Name"
+                    <input type="text" name="name" required placeholder="Name"
                         class="w-full border border-gray-400 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-400">
                 </div>
 
+                <!-- Email -->
                 <div>
                     <label class="block text-sm mb-1">Email*</label>
-                    <input type="email" placeholder="Email"
+                    <input type="email" name="email" required placeholder="Email"
                         class="w-full border border-gray-400 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-400">
                 </div>
 
+                <!-- Message -->
                 <div>
                     <label class="block text-sm mb-1">Message*</label>
-                    <textarea placeholder="Message" rows="5"
+                    <textarea name="message" required rows="5" placeholder="Message"
                         class="w-full border border-gray-400 px-4 py-2 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-lime-400"></textarea>
                 </div>
 
+                <!-- Submit Button -->
                 <button type="submit"
-                    class="bg-[#0e0e12] text-white w-full py-2 rounded-md hover:bg-gray-900 transition">Send
-                    Message</button>
+                    class="bg-[#0e0e12] text-white w-full py-2 rounded-md hover:bg-gray-900 transition">
+                    Send Message
+                </button>
             </form>
         </div>
 
-        <!-- Decorative Right Side -->
+        <!-- Right Side Decoration -->
         <div class="w-full md:w-1/2 relative flex justify-center items-center">
-            <!-- Placeholder Image for Decoration -->
             <img src="./Assets/hero.png" alt="Decoration" class="max-w-xs md:max-w-sm">
         </div>
     </section>
+
 
 
     <!-- Footer -->
@@ -732,11 +746,7 @@
         });
 
 
-        // JavaScript to handle form submission
-        document.querySelector("form").addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert("Thanks! We'll be in touch soon.");
-        });
+
 
         // JavaScript for the accordion functionality
         function toggleAccordion(index) {
