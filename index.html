@@ -582,68 +582,92 @@
 
 
     <!-- Contact Section -->
-    <section
-        class="bg-gray-200 py-12 mt-20 px-6 rounded-3xl max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+     <section
+  class="bg-gray-200 py-12 mt-20 px-6 rounded-3xl max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
 
-        <!-- Form Left Side -->
-        <div class="w-full md:w-1/2">
-            <!-- Toggle Options -->
-            <div class="flex gap-6 mb-6">
-                <label class="flex items-center space-x-2">
-                    <input type="radio" name="reason" class="accent-lime-400" checked>
-                    <span class="text-sm font-medium">Say Hi</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                    <input type="radio" name="reason" class="accent-lime-400">
-                    <span class="text-sm font-medium">Get a Quote</span>
-                </label>
-            </div>
+  <!-- Form Left Side -->
+  <div class="w-full md:w-1/2">
+    <!-- Toggle Options -->
+    <div class="flex gap-6 mb-6">
+      <label class="flex items-center space-x-2">
+        <input type="radio" name="reason" class="accent-lime-400" checked />
+        <span class="text-sm font-medium">Say Hi</span>
+      </label>
+      <label class="flex items-center space-x-2">
+        <input type="radio" name="reason" class="accent-lime-400" />
+        <span class="text-sm font-medium">Get a Quote</span>
+      </label>
+    </div>
 
-            <!-- Form (Formsubmit.co) -->
-            <form action="https://formsubmit.co/kumarsajan0013@gmail.com" method="POST" class="space-y-4">
-                <!-- Hidden Settings -->
-                <input type="hidden" name="_next" value="./thankYou/thankyou.html">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="box">
-                <input type="hidden" name="_autoresponse"
-                    value="Thanks for contacting TezCraft! We’ll reach out to you shortly.">
-                <!-- (Optional) Redirect to a thank-you page -->
-                <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
+    <!-- Form With JS Redirect -->
+    <form id="tezcraftForm" class="space-y-4">
+      <!-- Hidden for FormSubmit -->
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="box" />
+      <input type="hidden" name="_autoresponse"
+        value="Thanks for contacting TezCraft! We’ll reach out to you shortly." />
 
-                <!-- Name -->
-                <div>
-                    <label class="block text-sm mb-1">Name</label>
-                    <input type="text" name="name" required placeholder="Name"
-                        class="w-full border border-gray-400 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-400">
-                </div>
+      <!-- Name -->
+      <div>
+        <label class="block text-sm mb-1">Name</label>
+        <input type="text" name="name" required placeholder="Name"
+          class="w-full border border-gray-400 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-400" />
+      </div>
 
-                <!-- Email -->
-                <div>
-                    <label class="block text-sm mb-1">Email*</label>
-                    <input type="email" name="email" required placeholder="Email"
-                        class="w-full border border-gray-400 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-400">
-                </div>
+      <!-- Email -->
+      <div>
+        <label class="block text-sm mb-1">Email*</label>
+        <input type="email" name="email" required placeholder="Email"
+          class="w-full border border-gray-400 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-400" />
+      </div>
 
-                <!-- Message -->
-                <div>
-                    <label class="block text-sm mb-1">Message*</label>
-                    <textarea name="message" required rows="5" placeholder="Message"
-                        class="w-full border border-gray-400 px-4 py-2 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-lime-400"></textarea>
-                </div>
+      <!-- Message -->
+      <div>
+        <label class="block text-sm mb-1">Message*</label>
+        <textarea name="message" required rows="5" placeholder="Message"
+          class="w-full border border-gray-400 px-4 py-2 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-lime-400"></textarea>
+      </div>
 
-                <!-- Submit Button -->
-                <button type="submit"
-                    class="bg-[#0e0e12] text-white w-full py-2 rounded-md hover:bg-gray-900 transition">
-                    Send Message
-                </button>
-            </form>
-        </div>
+      <!-- Submit Button -->
+      <button type="submit"
+        class="bg-[#0e0e12] text-white w-full py-2 rounded-md hover:bg-gray-900 transition">
+        Send Message
+      </button>
+    </form>
+  </div>
 
-        <!-- Right Side Decoration -->
-        <div class="w-full md:w-1/2 relative flex justify-center items-center">
-            <img src="./Assets/hero.png" alt="Decoration" class="max-w-xs md:max-w-sm">
-        </div>
-    </section>
+  <!-- Right Side Decoration -->
+  <div class="w-full md:w-1/2 relative flex justify-center items-center">
+    <img src="./Assets/hero.png" alt="Decoration" class="max-w-xs md:max-w-sm" />
+  </div>
+</section>
+
+<!-- ✅ JavaScript to handle redirect after form submit -->
+<script>
+  const form = document.getElementById("tezcraftForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop default form submit
+
+    const formData = new FormData(form);
+
+    fetch("https://formsubmit.co/kumarsajan0013@gmail.com", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          window.location.href = "thankyou/thankyou.html"; // ✅ redirect to your local thankyou page
+        } else {
+          alert("❌ Something went wrong. Try again.");
+        }
+      })
+      .catch((error) => {
+        alert("❌ Network error. Please try again later.");
+      });
+  });
+</script>
+
 
 
 
