@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tezcraft</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dbde72f364.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-white text-black">
@@ -45,12 +46,14 @@
     </header>
 
 
-    <section class="container mt-5 mb-5">
-        <div class="bg-gray-100 rounded-3 p-4 p-md-5 d-flex flex-column flex-lg-row align-items-center gap-4 gap-lg-5">
-            <img src="/Tezcraft/assets/images/Illustration.png" alt="illustration" class="img-fluid w-100 w-lg-50" />
-            <div class="text-center text-lg-start">
-                <h1 class="fw-bold display-6 display-md-5">Real Results, Real Impact <br />– Powered by TezCraft</h1>
-                <p class="mt-3">
+    <section class="mx-auto mt-10 mb-10 px-4 max-w-7xl">
+        <div class="bg-gray-100 rounded-xl p-6 md:p-10 flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
+            <img src="../Assets/hero.png" alt="illustration" class="w-48 h-48 md:w-64 md:h-64 object-cover" />
+            <div class="text-center lg:text-left">
+                <h1 class="font-bold text-3xl md:text-4xl leading-tight">
+                    Real Results, Real Impact <br />– Powered by TezCraft
+                </h1>
+                <p class="mt-4 text-base md:text-lg">
                     Explore how TezCraft transforms ideas into digital success. From startups to enterprises, discover
                     real-world
                     use cases where our 30+ digital services—like web development, marketing, and lead generation—drive
@@ -61,127 +64,105 @@
         </div>
     </section>
 
-    <section class="container my-5">
-        <div class="d-flex flex-column gap-5">
 
+    <section class="container mx-auto my-12 px-4 max-w-7xl">
+        <div class="flex flex-col gap-12">
+
+            <!-- Card 1 -->
             <div
-                class="bg-dark text-white rounded-4 p-4 p-lg-5 d-flex flex-column flex-lg-row justify-content-between gap-4 align-items-start">
-                <div class="col-lg-6 px-0">
-                    <span class="bg-lime-400 text-black fw-bold px-3 py-1 rounded">Featured Success Story</span>
-                    <h3 class="fw-bold mt-3">Scaling Success for a<br /> Leading E-Commerce Brand</h3>
-                    <p class="mt-3 text-white-50">
+                class="bg-black text-white rounded-xl p-6 lg:p-10 flex flex-col lg:flex-row justify-between gap-6 items-start">
+                <div class="lg:w-1/2">
+                    <span class="bg-lime-400 text-black font-bold px-3 py-1 rounded">Featured Success Story</span>
+                    <h3 class="font-bold text-2xl mt-4 leading-tight">Scaling Success for a<br /> Leading E-Commerce
+                        Brand</h3>
+                    <p class="mt-4 text-white/70">
                         Through SEO and PPC strategies, we helped this e-commerce brand boost visibility, traffic, and
                         online sales.
                     </p>
-
                 </div>
-                <div class="col-lg-6 px-0">
-                    <div class="row row-cols-1 row-cols-md-2 g-3 text-black">
-                        <div class="col">
-                            <div class="bg-white rounded-3 text-center p-4">
-                                <h4 class="fw-bold mb-1">200%</h4>
-                                <small>increase in<br />organic traffic</small>
-                            </div>
+                <div class="lg:w-1/2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-black">
+                        <div class="bg-white rounded-lg text-center p-4">
+                            <h4 class="font-bold text-xl mb-1">200%</h4>
+                            <small>increase in<br />organic traffic</small>
                         </div>
-                        <div class="col">
-                            <div class="bg-white rounded-3 text-center p-4">
-                                <h4 class="fw-bold mb-1">150%</h4>
-                                <small>rise in<br />online sales</small>
-                            </div>
+                        <div class="bg-white rounded-lg text-center p-4">
+                            <h4 class="font-bold text-xl mb-1">150%</h4>
+                            <small>rise in<br />online sales</small>
                         </div>
-                        <div class="col">
-                            <div class="bg-white rounded-3 text-center p-4">
-                                <h4 class="fw-bold mb-1">75%</h4>
-                                <small>reduction in<br />cost-per-click</small>
-                            </div>
+                        <div class="bg-white rounded-lg text-center p-4">
+                            <h4 class="font-bold text-xl mb-1">75%</h4>
+                            <small>reduction in<br />cost-per-click</small>
                         </div>
-                        <div class="col">
-                            <div class="bg-white rounded-3 text-center p-4">
-                                <h4 class="fw-bold mb-1">300%</h4>
-                                <small>improvement in<br />conversion rate</small>
-                            </div>
+                        <div class="bg-white rounded-lg text-center p-4">
+                            <h4 class="font-bold text-xl mb-1">300%</h4>
+                            <small>improvement in<br />conversion rate</small>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Card 2 -->
             <div
-                class="bg-dark text-white rounded-4 p-4 p-lg-5 d-flex flex-column flex-lg-row justify-content-between gap-4 align-items-start">
-                <div class="col-lg-6 px-0">
-                    <span class="bg-lime-400 text-black fw-bold px-3 py-1 rounded">B2B Growth Hack</span>
-                    <h3 class="fw-bold mt-3">Generating Quality Leads for a B2B Tech Firm</h3>
-                    <p class="mt-3 text-white-50">
+                class="bg-black text-white rounded-xl p-6 lg:p-10 flex flex-col lg:flex-row justify-between gap-6 items-start">
+                <div class="lg:w-1/2">
+                    <span class="bg-lime-400 text-black font-bold px-3 py-1 rounded">B2B Growth Hack</span>
+                    <h3 class="font-bold text-2xl mt-4 leading-tight">Generating Quality Leads for a B2B Tech Firm</h3>
+                    <p class="mt-4 text-white/70">
                         We launched LinkedIn lead gen ads and outreach automation, generating qualified prospects at
                         scale for their sales team.
                     </p>
-
                 </div>
-                <div class="col-lg-6 px-0">
-                    <div class="row row-cols-1 row-cols-md-2 g-3 text-black">
-                        <div class="col">
-                            <div class="bg-white rounded-3 text-center p-4">
-                                <h4 class="fw-bold mb-1">600+</h4>
-                                <small>qualified B2B<br />leads generated</small>
-                            </div>
+                <div class="lg:w-1/2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-black">
+                        <div class="bg-white rounded-lg text-center p-4">
+                            <h4 class="font-bold text-xl mb-1">600+</h4>
+                            <small>qualified B2B<br />leads generated</small>
                         </div>
-                        <div class="col">
-                            <div class="bg-white rounded-3 text-center p-4">
-                                <h4 class="fw-bold mb-1">5x</h4>
-                                <small>ROI on ad spend</small>
-                            </div>
+                        <div class="bg-white rounded-lg text-center p-4">
+                            <h4 class="font-bold text-xl mb-1">5x</h4>
+                            <small>ROI on ad spend</small>
                         </div>
-                        <div class="col">
-                            <div class="bg-white rounded-3 text-center p-4">
-                                <h4 class="fw-bold mb-1">80%</h4>
-                                <small>response rate<br />on outreach</small>
-                            </div>
+                        <div class="bg-white rounded-lg text-center p-4">
+                            <h4 class="font-bold text-xl mb-1">80%</h4>
+                            <small>response rate<br />on outreach</small>
                         </div>
-                        <div class="col">
-                            <div class="bg-white rounded-3 text-center p-4">
-                                <h4 class="fw-bold mb-1">90%</h4>
-                                <small>increase in<br />sales meetings</small>
-                            </div>
+                        <div class="bg-white rounded-lg text-center p-4">
+                            <h4 class="font-bold text-xl mb-1">90%</h4>
+                            <small>increase in<br />sales meetings</small>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Card 3 -->
             <div
-                class="bg-dark text-white rounded-4 p-4 p-lg-5 d-flex flex-column flex-lg-row justify-content-between gap-4 align-items-start">
-                <div class="col-lg-6 px-0">
-                    <span class="bg-lime-400 text-black fw-bold px-3 py-1 rounded">Startup Launch</span>
-                    <h3 class="fw-bold mt-3">Launching a Mobile App with Viral Reach</h3>
-                    <p class="mt-3 text-white-50">
+                class="bg-black text-white rounded-xl p-6 lg:p-10 flex flex-col lg:flex-row justify-between gap-6 items-start">
+                <div class="lg:w-1/2">
+                    <span class="bg-lime-400 text-black font-bold px-3 py-1 rounded">Startup Launch</span>
+                    <h3 class="font-bold text-2xl mt-4 leading-tight">Launching a Mobile App with Viral Reach</h3>
+                    <p class="mt-4 text-white/70">
                         TezCraft's mobile app marketing services helped this startup achieve viral downloads and
                         trending status in the Play Store.
                     </p>
-
                 </div>
-                <div class="col-lg-6 px-0">
-                    <div class="row row-cols-1 row-cols-md-2 g-3 text-black">
-                        <div class="col">
-                            <div class="bg-white rounded-3 text-center p-4">
-                                <h4 class="fw-bold mb-1">50K+</h4>
-                                <small>app downloads<br />in 30 days</small>
-                            </div>
+                <div class="lg:w-1/2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-black">
+                        <div class="bg-white rounded-lg text-center p-4">
+                            <h4 class="font-bold text-xl mb-1">50K+</h4>
+                            <small>app downloads<br />in 30 days</small>
                         </div>
-                        <div class="col">
-                            <div class="bg-white rounded-3 text-center p-4">
-                                <h4 class="fw-bold mb-1">Top 10</h4>
-                                <small>Play Store<br />category rank</small>
-                            </div>
+                        <div class="bg-white rounded-lg text-center p-4">
+                            <h4 class="font-bold text-xl mb-1">Top 10</h4>
+                            <small>Play Store<br />category rank</small>
                         </div>
-                        <div class="col">
-                            <div class="bg-white rounded-3 text-center p-4">
-                                <h4 class="fw-bold mb-1">4.8</h4>
-                                <small>average user<br />rating</small>
-                            </div>
+                        <div class="bg-white rounded-lg text-center p-4">
+                            <h4 class="font-bold text-xl mb-1">4.8</h4>
+                            <small>average user<br />rating</small>
                         </div>
-                        <div class="col">
-                            <div class="bg-white rounded-3 text-center p-4">
-                                <h4 class="fw-bold mb-1">10x</h4>
-                                <small>brand visibility<br />growth</small>
-                            </div>
+                        <div class="bg-white rounded-lg text-center p-4">
+                            <h4 class="font-bold text-xl mb-1">10x</h4>
+                            <small>brand visibility<br />growth</small>
                         </div>
                     </div>
                 </div>
@@ -191,251 +172,224 @@
     </section>
 
 
-    <style>
-        .hover-border-animate {
-            position: relative;
-            border: 2px solid transparent;
-            transition: border-color 0.3s ease;
-        }
 
-        .hover-border-animate:hover {
-            border-color: #84cc16;
-        }
-    </style>
 
-    <div class="row g-4">
 
-        <div class="col-md-4">
-            <div class="hover-border-animate p-4 rounded h-100">
-                <h5 class="fw-bold">Google Ads</h5>
-                <p class="text-muted mt-2">
-                    Maximize your brand visibility and ROI with our targeted Google Ads campaigns crafted for your
-                    specific audience and goals.
-                </p>
-                <a href="#" class="text-lime-600 font-medium d-flex align-items-center mt-2 hover:underline">Learn
-                    more</a>
-            </div>
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4 py-10">
+
+        <!-- Service Card -->
+        <div
+            class="bg-orange-100 border  p-6 rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 border-gray-600 shadow-gray-500">
+            <h5 class="font-bold text-lg">Google Ads</h5>
+            <p class="text-gray-500 mt-2">
+                Maximize your brand visibility and ROI with our targeted Google Ads campaigns crafted for your specific
+                audience and goals.
+            </p>
+            <a href="#" class="text-lime-600 font-medium flex items-center mt-3 hover:underline">Learn more</a>
         </div>
 
-        <div class="col-md-4">
-            <div class="hover-border-animate p-4 rounded h-100">
-                <h5 class="fw-bold">Social Media Marketing</h5>
-                <p class="text-muted mt-2">
-                    Elevate your online presence and engagement with creative content and strategic marketing across all
-                    major platforms.
-                </p>
-                <a href="#" class="text-lime-600 font-medium d-flex align-items-center mt-2 hover:underline">Learn
-                    more</a>
-            </div>
+        <div
+            class="bg-orange-100 border  p-6 rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 border-gray-600 shadow-gray-500">
+            <h5 class="font-bold text-lg">Social Media Marketing</h5>
+            <p class="text-gray-500 mt-2">
+                Elevate your online presence and engagement with creative content and strategic marketing across all
+                major platforms.
+            </p>
+            <a href="#" class="text-lime-600 font-medium flex items-center mt-3 hover:underline">Learn more</a>
         </div>
 
-        <div class="col-md-4">
-            <div class="hover-border-animate p-4 rounded h-100">
-                <h5 class="fw-bold">Web Design & Development</h5>
-                <p class="text-muted mt-2">
-                    Get responsive, SEO-friendly websites that deliver fast performance, intuitive UX, and drive results
-                    for your business.
-                </p>
-                <a href="#" class="text-lime-600 font-medium d-flex align-items-center mt-2 hover:underline">Learn
-                    more</a>
-            </div>
+        <div
+            class="bg-orange-100 border  p-6 rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 border-gray-600 shadow-gray-500">
+            <h5 class="font-bold text-lg">Web Design & Development</h5>
+            <p class="text-gray-500 mt-2">
+                Get responsive, SEO-friendly websites that deliver fast performance, intuitive UX, and drive results for
+                your business.
+            </p>
+            <a href="#" class="text-lime-600 font-medium flex items-center mt-3 hover:underline">Learn more</a>
         </div>
 
-        <div class="col-md-4">
-            <div class="hover-border-animate p-4 rounded h-100">
-                <h5 class="fw-bold">Lead Generation</h5>
-                <p class="text-muted mt-2">
-                    Generate quality leads that convert using our proven B2B and B2C strategies to fill your sales
-                    pipeline efficiently.
-                </p>
-                <a href="#" class="text-lime-600 font-medium d-flex align-items-center mt-2 hover:underline">Learn
-                    more</a>
-            </div>
+        <div
+            class="bg-orange-100 border  p-6 rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 border-gray-600 shadow-gray-500">
+            <h5 class="font-bold text-lg">Lead Generation</h5>
+            <p class="text-gray-500 mt-2">
+                Generate quality leads that convert using our proven B2B and B2C strategies to fill your sales pipeline
+                efficiently.
+            </p>
+            <a href="#" class="text-lime-600 font-medium flex items-center mt-3 hover:underline">Learn more</a>
         </div>
 
-        <div class="col-md-4">
-            <div class="hover-border-animate p-4 rounded h-100">
-                <h5 class="fw-bold">Video Editing</h5>
-                <p class="text-muted mt-2">
-                    Engage your audience with compelling video content, edited professionally to highlight your message
-                    and boost conversions.
-                </p>
-                <a href="#" class="text-lime-600 font-medium d-flex align-items-center mt-2 hover:underline">Learn
-                    more</a>
-            </div>
+        <div
+            class="bg-orange-100 border  p-6 rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 border-gray-600 shadow-gray-500">
+            <h5 class="font-bold text-lg">Video Editing</h5>
+            <p class="text-gray-500 mt-2">
+                Engage your audience with compelling video content, edited professionally to highlight your message and
+                boost conversions.
+            </p>
+            <a href="#" class="text-lime-600 font-medium flex items-center mt-3 hover:underline">Learn more</a>
         </div>
 
-        <div class="col-md-4">
-            <div class="hover-border-animate p-4 rounded h-100">
-                <h5 class="fw-bold">Mobile App Development</h5>
-                <p class="text-muted mt-2">
-                    Build fast, scalable, and feature-rich mobile applications tailored to your business needs with
-                    seamless user experiences.
-                </p>
-                <a href="#" class="text-lime-600 font-medium d-flex align-items-center mt-2 hover:underline">Learn
-                    more</a>
-            </div>
+        <div
+            class="bg-orange-100 border  p-6 rounded-3xl shadow-xl hover:shadow-gray-600 transition duration-200 border-gray-600 shadow-gray-500">
+            <h5 class="font-bold text-lg">Mobile App Development</h5>
+            <p class="text-gray-500 mt-2">
+                Build fast, scalable, and feature-rich mobile applications tailored to your business needs with seamless
+                user experiences.
+            </p>
+            <a href="#" class="text-lime-600 font-medium flex items-center mt-3 hover:underline">Learn more</a>
         </div>
 
-    </div>
+    </section>
 
 
 
-    <div class="container my-5">
 
-        <section class="container mb-5">
-            <div class="mb-4">
-                <h2 class="text-lime-600 fw-bold fs-4">Testimonials</h2>
-                <p class="text-muted">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our
-                    Digital Marketing Services</p>
-            </div>
 
-            <div id="testimonialCarousel" class="carousel slide bg-dark text-white rounded-4 p-5 position-relative"
-                data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p class="fs-5 fst-italic border border-lime-500 p-4 rounded text-lime-300">
-                            "We have been working with Positweb for the past year and have seen a significant increase
-                            in website traffic and leads as a result of their efforts. The team is professional,
-                            responsive, and truly cares about the success of our business. I highly recommend Positweb
-                            to any company looking to grow their online presence."
-                        </p>
-                        <div class="mt-3">
-                            <strong>Sajan Kumar</strong><br>
-                            <small class="text-muted">Founder, Tezcraft</small>
+
+    <section class=" py-16">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-left text-3xl font-bold mb-2 text-white">
+                <span class="bg-orange-700 text-black px-2 py-1 rounded">Testimonials</span>
+            </h2>
+            <p class="text-sm text-left mb-10 text-gray-800">
+                Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing
+                Services
+            </p>
+            <div class="bg-[#0e0e12] rounded-xl max-w-8xl shadow-xl shadow-gray-600 p-8 text-white">
+                <div class=" max-w-6xl mx-auto text-center">
+
+                    <!-- Slider container -->
+                    <div class="relative overflow-hidden">
+                        <div id="slider" class="flex  transition-transform duration-500">
+                            <!-- Testimonial Card -->
+                            <div class="min-w-full bg-[#0e0e12] border border-orange-400 rounded-3xl p-8 text-white">
+                                <p class="mb-4">"TezCraft transformed our online presence and increased leads by 70% in
+                                    5 months. Their
+                                    team is proactive,
+                                    creative, and easy to work with."</p>
+                                <p class="text-lime-400 font-semibold">Rajeev Malhotra</p>
+                                <p class="text-sm">Founder & CEO, InnovateX </p>
+                            </div>
+
+
+                            <div class="min-w-full bg-[#0e0e12] border border-orange-400 rounded-3xl p-8 text-white">
+                                <p class="mb-4">"Great experience! They’ve helped us scale our campaigns and reach our
+                                    goals."
+                                </p>
+                                <p class="text-lime-400 font-semibold">Jane Doe</p>
+                                <p class="text-sm">CMO at ABC Ltd</p>
+                            </div>
+
+                            <div class="min-w-full bg-[#0e0e12] border border-orange-400 rounded-3xl p-8 text-white">
+                                <p class="mb-4">"Outstanding SEO results from TezCraft! Our website’s organic traffic
+                                    doubled within 4
+                                    months, helping us
+                                    reach new customers globally."
+                                </p>
+                                <p class="text-lime-400 font-semibold">Neha Sharma</p>
+                                <p class="text-sm">Marketing Head, Bright Solutions</p>
+                            </div>
+                            <div class="min-w-full bg-[#0e0e12] border border-orange-400 rounded-3xl p-8 text-white">
+                                <p class="mb-4">"The TezCraft team delivered a sleek, responsive website that perfectly
+                                    represents our
+                                    brand. Communication
+                                    was clear, and deadlines were met."
+                                </p>
+                                <p class="text-lime-400 font-semibold">Vikram Singh</p>
+                                <p class="text-sm">Product Manager, TechPro</p>
+                            </div>
+
+                            <div class="min-w-full bg-[#0e0e12] border border-orange-400 rounded-3xl p-8 text-white">
+                                <p class="mb-4">
+                                    "Professional, efficient, and results-driven — that’s TezCraft in a nutshell. Their
+                                    web app
+                                    development
+                                    accelerated our business workflow tremendously."
+                                </p>
+                                <p class="text-lime-600 font-semibold">Arjun Desai</p>
+                                <p class="text-sm">CTO, FinStream</p>
+                            </div>
+
+                            <div class="min-w-full bg-[#0e0e12] border border-orange-400 rounded-3xl p-8 text-white">
+                                <p class="mb-4">
+                                    "Highly recommend TezCraft for anyone looking to grow digitally. Their customized
+                                    solutions and
+                                    hands-on
+                                    approach really stood out."
+                                </p>
+                                <p class="text-lime-600 font-semibold text-lg">Priya Verma</p>
+                                <p class="text-sm">Founder, Artistry Hub</p>
+                            </div>
+
+                            <!-- Add more as needed -->
                         </div>
-                    </div>
 
-                    <div class="carousel-item">
-                        <p class="fs-5 fst-italic border border-lime-500 p-4 rounded text-lime-300">
-                            "Their approach to SEO and paid media has dramatically improved our results. They always
-                            bring new ideas and optimizations. A great team!"
-                        </p>
-                        <div class="mt-3">
-                            <strong>Nitesh Kumar</strong><br>
-                            <small class="text-muted">CEO, Placement Lo</small>
+                        <!-- Navigation Arrows -->
+                        <div class="absolute left-0 top-1/2 -translate-y-1/2">
+                            <button onclick="prevSlide()" class="text-white text-xl px-4"><i
+                                    class="fa-duotone fa-solid fa-arrow-left"></i></button>
                         </div>
-                    </div>
+                        <div class="absolute right-0 top-1/2 -translate-y-1/2">
+                            <button onclick="nextSlide()" class="text-white text-xl px-4"><i
+                                    class="fa-duotone fa-solid fa-arrow-right"></i></button>
+                        </div>
 
-                    <div class="carousel-item">
-                        <p class="fs-5 fst-italic border border-lime-500 p-4 rounded text-lime-300">
-                            "Tezcraft completely revamped our site and helped us gain momentum in the competitive
-                            e-commerce space. Excellent insights and execution!"
-                        </p>
-                        <div class="mt-3">
-                            <strong>Sahil Kulria</strong><br>
-                            <small class="text-muted">Founder, Silly19</small>
+                        <!-- Dots -->
+                        <div class="flex justify-center mt-6 space-x-2">
+                            <div class="w-3 h-3 bg-lime-400 rounded-full"></div>
+                            <div class="w-3 h-3 bg-white rounded-full"></div>
+                            <div class="w-3 h-3 bg-white rounded-full"></div>
                         </div>
                     </div>
                 </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-
-                <div class="carousel-indicators position-static mt-4 justify-content-center">
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
-                        class="active bg-lime-400 rounded-circle" style="width: 12px; height: 12px;"></button>
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
-                        class="bg-light rounded-circle" style="width: 12px; height: 12px;"></button>
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
-                        class="bg-light rounded-circle" style="width: 12px; height: 12px;"></button>
-                </div>
             </div>
-        </section>
+    </section>
 
-        <section class="container mb-5">
+
+
+    <section class="container max-w-7xl mx-auto">
+        <div class="bg-lime-300 rounded-xl p-6 md:p-10 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h3 class="font-bold text-xl md:text-2xl">Let’s Create Your Next Success Story</h3>
+                <p class="mt-2 mb-0">Contact us today to learn more about how our digital marketing services <br> can
+                    help
+                    your business grow and succeed online.</p>
+                <button class="bg-black btn text-white px-6 mt-2 py-2">Get your free
+                    proposal</button>
+            </div>
+            <div">
+                <img src="../Assets/hero.png" alt="Contact Us Illustration"
+                    class="w-48 h-48 md:w-64 md:h-64 object-cover">
+        </div>
+        </div>
+    </section>
+
+    <div class="py-5"></div>
+
+    <!-- Footer -->
+    <footer class="bg-[#0e0e17] text-white px-6 py-10">
+        <!-- Top Section -->
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+
+            <!-- Logo + Nav -->
             <div
-                class="bg-lime-300 rounded-4 p-5 d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
-                <div>
-                    <h3 class="fw-bold fs-4">Let’s Create Your Next Success Story</h3>
-                    <p class="mb-0">Contact us today to learn more about how our digital marketing services can help
-                        your business grow and succeed online.</p>
-                </div>
-                <div class="d-flex align-items-center gap-3">
-                    <button class="btn btn-dark px-4 py-2 rounded">Get your free proposal</button>
-                    <img src="/Tezcraft/assets/images/tezcraft.png" alt="Mascot" class="img-fluid"
-                        style="height: 60px;" />
-                </div>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer class="bg-[#0e0e17] text-white px-6 py-10">
-            <!-- Top Section -->
-            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
-
-                <!-- Logo + Nav -->
-                <div
-                    class="w-full md:w-auto flex flex-col md:flex-row md:items-center justify-between md:justify-start gap-6">
-                    <!-- Logo -->
-                    <div class="flex items-center gap-2 justify-center md:justify-start">
-                        <span class="text-3xl font-semibold">Tez<span class="text-orange-400">Craft</span></span>
-                    </div>
-
-                    <!-- Navigation Links -->
-                    <nav class="flex flex-col items-center  md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm">
-                        <a href="#" class="hover:underline">About us</a>
-                        <a href="#" class="hover:underline">Services</a>
-                        <a href="#" class="hover:underline">Use Cases</a>
-                        <a href="#" class="hover:underline">Pricing</a>
-                        <a href="#" class="hover:underline">Blog</a>
-                    </nav>
+                class="w-full md:w-auto flex flex-col md:flex-row md:items-center justify-between md:justify-start gap-6">
+                <!-- Logo -->
+                <div class="flex items-center gap-2 justify-center md:justify-start">
+                    <span class="text-3xl font-semibold">Tez<span class="text-orange-400">Craft</span></span>
                 </div>
 
-                <!-- Social Icons (Desktop Only) -->
-                <div class="hidden md:flex space-x-4">
-                    <a href="#" class="bg-white text-black p-2 rounded-3xl">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="bg-white text-black p-2 rounded-3xl">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="bg-white text-black p-2 rounded-3xl">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
+                <!-- Navigation Links -->
+                <nav class="flex flex-col items-center  md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm">
+                    <a href="#" class="hover:underline">About us</a>
+                    <a href="#" class="hover:underline">Services</a>
+                    <a href="#" class="hover:underline">Use Cases</a>
+                    <a href="#" class="hover:underline">Pricing</a>
+                    <a href="#" class="hover:underline">Blog</a>
+                </nav>
             </div>
 
-            <!-- Contact and Subscribe -->
-            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10 mt-10">
-
-                <!-- Contact Info -->
-                <div
-                    class="flex flex-col items-center md:items-start w-full md:w-1/2 justify-center text-center md:text-left">
-                    <span class="inline-block bg-orange-400 text-black text-xs px-2 py-1 rounded">Contact us:</span>
-                    <div class="text-sm mt-4 items-center">
-                        <p>Email: info@tezcraft.com</p>
-                        <p>Phone: 555-567-8901</p>
-                        <p>Address: 1234 Main St<br>Moonstone City, Stardust State 12345</p>
-                    </div>
-                    <!-- Example button, center-aligned on mobile -->
-                    <button
-                        class="mt-4 bg-orange-400 text-black px-4 py-2 rounded hover:bg-orange-300 transition w-full md:w-auto">
-                        Contact Now
-                    </button>
-                </div>
-
-                <!-- Subscribe Form -->
-                <div class="w-full md:w-1/2 bg-[#1c1c29] p-6 rounded-lg space-y-4 mt-6 md:mt-0">
-                    <label for="email" class="block text-sm">Email</label>
-                    <input id="email" type="email" placeholder="Email"
-                        class="w-full p-2 rounded border border-gray-400 bg-transparent text-white placeholder-gray-400" />
-                    <button class="w-full bg-orange-400 text-black py-2 px-4 rounded hover:bg-orange-300 transition">
-                        Subscribe to news
-                    </button>
-                </div>
-            </div>
-
-
-            <!-- Social Icons (Mobile Only) -->
-            <div class="mt-6 flex justify-center space-x-4 md:hidden">
+            <!-- Social Icons (Desktop Only) -->
+            <div class="hidden md:flex space-x-4">
                 <a href="#" class="bg-white text-black p-2 rounded-3xl">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
@@ -446,29 +400,97 @@
                     <i class="fab fa-twitter"></i>
                 </a>
             </div>
+        </div>
 
-            <!-- Bottom Bar -->
+        <!-- Contact and Subscribe -->
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10 mt-10">
+
+            <!-- Contact Info -->
             <div
-                class="mt-10 border-t border-gray-700 pt-4 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-                <p>© 2025 TezCraft. All Rights Reserved.</p>
-                <a href="#" class="hover:underline">Privacy Policy</a>
+                class="flex flex-col items-center md:items-start w-full md:w-1/2 justify-center text-center md:text-left">
+                <span class="inline-block bg-orange-400 text-black text-xs px-2 py-1 rounded">Contact us:</span>
+                <div class="text-sm mt-4 items-center">
+                    <p>Email: info@tezcraft.com</p>
+                    <p>Phone: 555-567-8901</p>
+                    <p>Address: 1234 Main St<br>Moonstone City, Stardust State 12345</p>
+                </div>
+                <!-- Example button, center-aligned on mobile -->
+                <button
+                    class="mt-4 bg-orange-400 text-black px-4 py-2 rounded hover:bg-orange-300 transition w-full md:w-auto">
+                    Contact Now
+                </button>
             </div>
 
-        </footer>
+            <!-- Subscribe Form -->
+            <div class="w-full md:w-1/2 bg-[#1c1c29] p-6 rounded-lg space-y-4 mt-6 md:mt-0">
+                <label for="email" class="block text-sm">Email</label>
+                <input id="email" type="email" placeholder="Email"
+                    class="w-full p-2 rounded border border-gray-400 bg-transparent text-white placeholder-gray-400" />
+                <button class="w-full bg-orange-400 text-black py-2 px-4 rounded hover:bg-orange-300 transition">
+                    Subscribe to news
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Social Icons (Mobile Only) -->
+        <div class="mt-6 flex justify-center space-x-4 md:hidden">
+            <a href="#" class="bg-white text-black p-2 rounded-3xl">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="bg-white text-black p-2 rounded-3xl">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="bg-white text-black p-2 rounded-3xl">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div
+            class="mt-10 border-t border-gray-700 pt-4 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>© 2025 TezCraft. All Rights Reserved.</p>
+            <a href="#" class="hover:underline">Privacy Policy</a>
+        </div>
+
+    </footer>
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-        <script>
-            // ✅ JS to Toggle Mobile Menu
+    <script>
+        // ✅ JS to Toggle Mobile Menu
 
-            const menuBtn = document.getElementById("menuBtn");
-            const mobileMenu = document.getElementById("mobileMenu");
-            menuBtn.addEventListener("click", () => {
-                mobileMenu.classList.toggle("hidden");
-            });
-        </script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        // JavaScript for the slider functionality
+        let currentIndex = 0;
+        const slider = document.getElementById("slider");
+        const slides = slider.children;
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            if (currentIndex < slides.length - 1) {
+                currentIndex++;
+                updateSlider();
+            }
+        }
+
+        function prevSlide() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlider();
+            }
+        }
+    </script>
 </body>
 
 </html>
